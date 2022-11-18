@@ -27,6 +27,7 @@ jobs:
         uses: docker/setup-buildx-action@v2
       -
         name: Collecting tag name info
+        id: meta
         uses: docker/metadata-action@v4
         with:
           images: |
